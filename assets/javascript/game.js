@@ -19,9 +19,24 @@ var blanksRemaining = word.length;
 
 while(blanksRemaining > 0) {
     //Game Code
-    prompt(answerBlanks.join(" "));
+    alert(answerBlanks.join(" "));
     // player input
-    var guess = innerHtml("")
+    var guess = prompt("Guess a letter.")
+    console.log(guess)
+    if(guess === null) {
+        break
+    }
+    else if (guess.length !== 1) {
+        alert("Please guess a single letter.")
+    }
+    else {
+        for(var t = 0; t < word.length; t++) {
+            if(word[t] === guess) {
+                answerBlanks[t] = guess;
+                blanksRemaining --;
+            }
+        }
+    }
 
     //update array and show progress
 }
