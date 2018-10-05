@@ -9,11 +9,44 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <script src="assets/javascript/game.js"></script>
-
+    
 
 </head>
 <body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class= "col-md-6 text-center" >
+        <h2>Guess This Word!</h2>
+          <span id= "placeholders">_ _ _  </span>
+      </div>
+      <div class= "col-md-6 text-center" >
+          <h2>Wrong Guesses</h2>
+            <span id= "guessed-letters"> _ _ _ _ _</span>
+        </div>
+    </div>
+    <div class= "row">
+      <div class= col-md-4>
+        <h3>Guesses Left : <span id = "guesses-left">0 </h3>
+      </div>
+      <div class= col-md-4>
+          <h3>Wins : <span id = "wins">0 </h3>
+        </div>
+      <div class= col-md-4>
+          <h3>Losses : <span id = "losses">0 </h3>
+        </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div>
+        <button  id="newGameButton"> New Game! </button>
+      </div>
+    </div>
+  
+
+  </div>
     
+  <script src="assets/javascript/game.js"></script>
 </body>
 </html>
