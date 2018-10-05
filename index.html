@@ -13,15 +13,21 @@
 
 </head>
 <body>
+  <div class="jumbotron jumbrotron-fluid">
+    <div class="container">
+        <h1 class = display-2>Byron's Word Guess!</h1>
+    </div>
+  </div>
+
   <div class="container-fluid">
     <div class="row">
       <div class= "col-md-6 text-center" >
         <h2>Guess This Word!</h2>
-          <span id= "placeholders">_ _ _  </span>
+          <span class= "gues" id= "placeholders">_ _ _  </span>
       </div>
       <div class= "col-md-6 text-center" >
           <h2>Wrong Guesses</h2>
-            <span id= "guessed-letters"> _ _ _ _ _</span>
+            <span class= "gues2" id= "guessed-letters"> _ _ _ _ _</span>
         </div>
     </div>
     <div class= "row">
@@ -39,7 +45,7 @@
       </div>
     </div>
     <div class="row">
-      <div>
+      <div class = col-md-8>
         <button  id="newGameButton"> New Game! </button>
       </div>
     </div>
